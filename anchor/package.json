@@ -1,0 +1,14 @@
+{
+  "name": "loyalty-ledger-anchor",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "anchor test"
+  },
+  "devDependencies": {
+    "@coral-xyz/anchor": "^0.30.1",
+    "chai": "^4.3.7",
+    "mocha": "^9.0.3",
+    "ts-mocha": "^10.0.0",
+    "typescript": "^5.4.5"
+  }
+}

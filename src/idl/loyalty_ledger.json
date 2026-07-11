@@ -1,0 +1,44 @@
+{
+  "_comment": "PLACEHOLDER. Replace this entire file with anchor/target/idl/loyalty_ledger.json after running `anchor build` in the anchor/ folder. See anchor/README.md for the full deploy walkthrough.",
+  "address": "11111111111111111111111111111111",
+  "metadata": {
+    "name": "loyalty_ledger",
+    "version": "0.1.0",
+    "spec": "0.1.0"
+  },
+  "instructions": [
+    {
+      "name": "check_in",
+      "discriminator": [0, 0, 0, 0, 0, 0, 0, 0],
+      "accounts": [
+        { "name": "fan", "writable": true, "signer": true },
+        { "name": "fandom_record", "writable": true },
+        { "name": "system_program" }
+      ],
+      "args": [
+        { "name": "sport", "type": "string" },
+        { "name": "team", "type": "string" }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "FandomRecord",
+      "discriminator": [0, 0, 0, 0, 0, 0, 0, 0]
+    }
+  ],
+  "types": [
+    {
+      "name": "FandomRecord",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          { "name": "wallet", "type": "pubkey" },
+          { "name": "streak_count", "type": "u32" },
+          { "name": "last_checkin_ts", "type": "i64" },
+          { "name": "bump", "type": "u8" }
+        ]
+      }
+    }
+  ]
+}
