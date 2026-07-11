@@ -70,20 +70,3 @@ World Cup check-in is a real, wallet-signed, timestamped receipt that costs a
 fraction of a cent and confirms in about a second, which is what makes
 "check in to every match" a plausible product instead of a novelty.
 
-## What's next / limitations
-
-- **Live sports data**: sport/team selection and event IDs are currently
-  manual. The next step is wiring in a real sports API (fixtures, live match
-  IDs) so check-ins are tied to an actual scheduled event instead of a
-  same-day string.
-- **On-chain PDA**: replace the local streak calculation with a small Anchor
-  program that owns a PDA per `(wallet, sport, team)` storing `streakCount`
-  and `lastCheckinTs` on-chain, so the streak itself — not just the
-  transaction log — is verifiable by anyone without trusting this frontend.
-- **Badge NFTs**: mint a badge NFT at each tier milestone instead of a UI-only
-  badge, so "Legend" status is itself a holdable, tradeable, verifiable asset.
-- **NBA / Other sports**: swap sample fixtures for a real feed once the World
-  Cup flow above is proven out.
-
----
-
