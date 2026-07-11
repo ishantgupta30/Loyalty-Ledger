@@ -2,7 +2,7 @@ use anchor_lang::prelude::*;
 use anchor_spl::associated_token::AssociatedToken;
 use anchor_spl::token::{self, Mint, MintTo, Token, TokenAccount};
 
-declare_id!("D6FQhKYEx6jfWUoqLjyEXnMRkwJvE6RHsMs4woDKmLuC");
+declare_id!("Dym2frfAKT5Dpi13fhJEzdg4NBjfQHEVHXRGWvNtHTX");
 
 // A check-in older than this no longer extends the streak — it resets to 1.
 // Loose stand-in for "one check-in per matchday" during a weekend build;

@@ -5,7 +5,7 @@ resolution = true
 skip-lint = false
 
 [programs.devnet]
-loyalty_ledger = "D6FQhKYEx6jfWUoqLjyEXnMRkwJvE6RHsMs4woDKmLuC"
+loyalty_ledger = "Dym2frfAKT5Dpi13fhJEzdg4NBjfQHEVHXRGWvNtHTX"
 
 [provider]
 cluster = "devnet"
